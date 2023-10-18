@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- External css links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Internal css links -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/listing.css">
+    
+        <!-- External scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <title>Document</title>
+    <style>
+        .pet-card {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Rehome Your Pet</h1>
+        <div class="text-center">
+            <button class="btn btn-primary mb-3" id="listPetButton">List a New Pet</button>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card pet-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pet Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Name: Max</h5>
+                        <p class="card-text">Breed: Labrador Retriever</p>
+                        <p class="card-text">Age: 2 years</p>
+                        <p class="card-text">Description: Max is a friendly and playful dog looking for a new home.</p>
+                        <button class="btn btn-primary" onclick="contactOwner('Max', 'Labrador Retriever', '2 years')">Contact Owner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card pet-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pet Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Name: Bella</h5>
+                        <p class="card-text">Breed: Siamese Cat</p>
+                        <p class="card-text">Age: 1 year</p>
+                        <p class="card-text">Description: Bella is a sweet and affectionate cat in need of a loving home.</p>
+                        <button class="btn btn-primary" onclick="contactOwner('Bella', 'Siamese Cat', '1 year')">Contact Owner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card pet-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pet Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Name: Rocky</h5>
+                        <p class="card-text">Breed: Golden Retriever</p>
+                        <p class="card-text">Age: 3 years</p>
+                        <p class="card-text">Description: Rocky is a loving and loyal dog looking for a forever home.</p>
+                        <button class="btn btn-primary" onclick="contactOwner('Rocky', 'Golden Retriever', '3 years')">Contact Owner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card pet-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pet Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Name: Whiskers</h5>
+                        <p class="card-text">Breed: Persian Cat</p>
+                        <p class="card-text">Age: 2 years</p>
+                        <p class="card-text">Description: Whiskers is a calm and gentle cat looking for a loving family.</p>
+                        <button class="btn btn-primary" onclick="contactOwner('Whiskers', 'Persian Cat', '2 years')">Contact Owner</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function contactOwner(petName, breed, age) {
+            alert(`You have expressed interest in adopting ${petName}, a ${breed} who is ${age} old. Please contact the owner for more information.`);
+        }
+
+        document.getElementById("listPetButton").addEventListener("click", function() {
+            // Redirect to a new page or display a form to list a new pet.
+            // You can implement this functionality as needed.
+            alert("Redirect to a pet listing form or page for listing a new pet.");
+        });
+    </script>
+
+
+</body>
+</html>
